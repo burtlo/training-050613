@@ -3,3 +3,14 @@
 
 en:
   hello: "Hello world"
+  # validation:
+  #   fails:
+  #     person:
+  #       last_name: "MEOW MEOW can't be blank MEOW MEOW!"
+  activerecord:
+    errors:
+      models:
+        person:
+          attributes:
+            last_name:
+              blank: "MEOW MEOW can't be blank MEOW MEOW!"
