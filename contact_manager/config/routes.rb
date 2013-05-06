@@ -2,7 +2,9 @@ ContactManager::Application.routes.draw do
   resources :phone_numbers
 
 
-  resources :people
+  resources :people do
+    # resources :phone_numbers
+  end
 
 
   # The priority is based upon order of creation:
