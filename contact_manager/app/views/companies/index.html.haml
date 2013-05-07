@@ -1,0 +1,29 @@
+%h1 Listing companies
+%a{href: "#",style: "color: red;", "data-element" => 'linklink'} Click Me!
+
+%div{class: "mystuff red color main", id: "companies-header"} Text
+%div.mystuff.red.color.main{id: "companies-header"} Text
+%div.mystuff.red.color.main#companies-header Text
+.mystuff.red.color.main#companies-header Text
+
+%table
+  %tr
+    %th Name
+    %th Show
+    %th Edit
+    %th Destroy
+
+  - @companies.each do |company|
+    %tr
+      %td= company.name
+      %td
+        = link_to 'Show', company
+      %td
+        = link_to 'Edit', edit_company_path(company)
+      %td
+        = link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Company', new_company_path
+= render partial: 'company_carousel'

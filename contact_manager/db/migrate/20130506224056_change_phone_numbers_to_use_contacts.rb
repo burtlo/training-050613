@@ -1,4 +1,7 @@
 class ChangePhoneNumbersToUseContacts < ActiveRecord::Migration
+
+  class PhoneNumber < ActiveRecord::Base ; end
+
   def up
     PhoneNumber.destroy_all
     remove_column :phone_numbers, :person_id
