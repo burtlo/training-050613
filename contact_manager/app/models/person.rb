@@ -13,6 +13,7 @@ class Person < ActiveRecord::Base
   validates :last_name, presence: true
   validates :first_name, presence: true
 
-  has_many :phone_numbers
+  # person_id
+  has_many :phone_numbers, as: :contact
 
 end

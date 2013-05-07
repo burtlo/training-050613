@@ -24,7 +24,7 @@ class PhoneNumbersController < ApplicationController
   # GET /phone_numbers/new
   # GET /phone_numbers/new.json
   def new
-    @phone_number = PhoneNumber.new person_id: params[:person_id]
+    @phone_number = PhoneNumber.new contact_id: params[:contact_id], contact_type: params[:contact_type]
 
     respond_to do |format|
       format.html # new.html.erb
@@ -44,7 +44,7 @@ class PhoneNumbersController < ApplicationController
 
     respond_to do |format|
       if @phone_number.save
-        format.html { redirect_to person_path(@phone_number.person), notice: 'Phone number was successfully created.' }
+        format.html { redirect_to url_for(@phone_number.contact), notice: 'Phone number was successfully created.' }
         format.json { render json: @phone_number, status: :created, location: @phone_number }
       else
         format.html { render action: "new" }
@@ -80,4 +80,21 @@ class PhoneNumbersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  # def contact_path(phone_number)
+  #   if phone_number.contact_type == "Company"
+  #     company_path(phone_number.contact_id)
+  #   else
+  #     person_path(phone_number.contact_id)
+  #   end
+  # end
+
+  # def contact_path(phone_number)
+  #   phone_number.contact
+  #   # send("#{phone_number.contact_type.downcase}_path",phone_number.contact_id)
+  #   # eval("#{phone_number.contact_type.downcase}_path(phone_number.contact_id)")
+  # end
+
 end

@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @company.name %>
+</p>
+
+<div class="phone-numbers">
+
+  <% @company.phone_numbers.each do |phone_number| %>
+    <p id="<%= dom_id(phone_number) %>">
+      <b>Phone:</b>
+      <%= phone_number.number %>
+    </p>
+  <% end %>
+
+  <%= link_to 'Add phone number', new_phone_number_path(contact_id: @company.id,contact_type: @company.class) %>
+
+</div>
+
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>
