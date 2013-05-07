@@ -24,7 +24,7 @@ describe PhoneNumbersController do
   # PhoneNumber. As you add validations to PhoneNumber, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    { "number" => "MyString", contact_id: person.id, contact_type: "person" }
+    { "number" => "MyString", contact_id: person.id, contact_type: "Person" }
   end
 
   let(:person) { Person.create first_name: "Bob", last_name: "Jones" }
