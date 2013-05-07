@@ -24,7 +24,7 @@ class PhoneNumbersController < ApplicationController
   # GET /phone_numbers/new
   # GET /phone_numbers/new.json
   def new
-    @phone_number = PhoneNumber.new person_id: params[:person_id]
+    @phone_number = PhoneNumber.new contact_id: params[:contact_id], contact_type: params[:contact_type]
 
     respond_to do |format|
       format.html # new.html.erb
@@ -44,7 +44,10 @@ class PhoneNumbersController < ApplicationController
 
     respond_to do |format|
       if @phone_number.save
-        format.html { redirect_to person_path(@phone_number.person), notice: 'Phone number was successfully created.' }
+        # TODO: right now we only return to the person and not the companies
+        # Redirect to the person_path
+        # Redirect to the company_path
+        format.html { redirect_to person_path(@phone_number.contact_id), notice: 'Phone number was successfully created.' }
         format.json { render json: @phone_number, status: :created, location: @phone_number }
       else
         format.html { render action: "new" }
