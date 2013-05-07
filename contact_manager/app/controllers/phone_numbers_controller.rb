@@ -1,4 +1,8 @@
 class PhoneNumbersController < ApplicationController
+
+  before_filter :find_phone_number, only: [ :show, :update, :edit, :delete ]
+  helper_method :recommended_products
+
   # GET /phone_numbers
   # GET /phone_numbers.json
   def index
@@ -13,7 +17,7 @@ class PhoneNumbersController < ApplicationController
   # GET /phone_numbers/1
   # GET /phone_numbers/1.json
   def show
-    @phone_number = PhoneNumber.find(params[:id])
+    # @phone_number
 
     respond_to do |format|
       format.html # show.html.erb
@@ -34,7 +38,7 @@ class PhoneNumbersController < ApplicationController
 
   # GET /phone_numbers/1/edit
   def edit
-    @phone_number = PhoneNumber.find(params[:id])
+
   end
 
   # POST /phone_numbers
@@ -56,7 +60,7 @@ class PhoneNumbersController < ApplicationController
   # PUT /phone_numbers/1
   # PUT /phone_numbers/1.json
   def update
-    @phone_number = PhoneNumber.find(params[:id])
+
 
     respond_to do |format|
       if @phone_number.update_attributes(params[:phone_number])
@@ -72,7 +76,6 @@ class PhoneNumbersController < ApplicationController
   # DELETE /phone_numbers/1
   # DELETE /phone_numbers/1.json
   def destroy
-    @phone_number = PhoneNumber.find(params[:id])
     @phone_number.destroy
 
     respond_to do |format|
@@ -82,6 +85,15 @@ class PhoneNumbersController < ApplicationController
   end
 
   private
+
+  def find_phone_number
+    @phone_number = PhoneNumber.find(params[:id])
+  end
+
+  def recommended_products
+    # @recommended_products = Products.all
+    @recommended_products ||= ProductRecommender.new("user","marketing_promotion","products").recommended_products
+  end
 
   # def contact_path(phone_number)
   #   if phone_number.contact_type == "Company"
