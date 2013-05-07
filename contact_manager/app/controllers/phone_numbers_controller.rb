@@ -44,10 +44,7 @@ class PhoneNumbersController < ApplicationController
 
     respond_to do |format|
       if @phone_number.save
-        # TODO: right now we only return to the person and not the companies
-        # Redirect to the person_path
-        # Redirect to the company_path
-        format.html { redirect_to person_path(@phone_number.contact_id), notice: 'Phone number was successfully created.' }
+        format.html { redirect_to url_for(@phone_number.contact), notice: 'Phone number was successfully created.' }
         format.json { render json: @phone_number, status: :created, location: @phone_number }
       else
         format.html { render action: "new" }
@@ -83,4 +80,21 @@ class PhoneNumbersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  # def contact_path(phone_number)
+  #   if phone_number.contact_type == "Company"
+  #     company_path(phone_number.contact_id)
+  #   else
+  #     person_path(phone_number.contact_id)
+  #   end
+  # end
+
+  # def contact_path(phone_number)
+  #   phone_number.contact
+  #   # send("#{phone_number.contact_type.downcase}_path",phone_number.contact_id)
+  #   # eval("#{phone_number.contact_type.downcase}_path(phone_number.contact_id)")
+  # end
+
 end
