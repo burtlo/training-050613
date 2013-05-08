@@ -1,0 +1,5 @@
+<li class="row<%= article_counter %>">
+  <%= link_to article.title, article_path(article) %>
+  <%= "#{article.comments.length} comments" %>
+  <%= truncate(article.comments.first.body, length: 10) unless article.comments.empty? %>
+</li>

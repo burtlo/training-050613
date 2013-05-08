@@ -29,6 +29,8 @@ group :test, :development do
   gem 'guard-rspec'
   gem 'rb-fsevent', '~> 0.9.1'
   gem 'capybara'
+  gem 'bullet'
+  gem 'newrelic_rpm'
 end
 
 # To use ActiveModel has_secure_password

@@ -34,7 +34,7 @@ class Article < ActiveRecord::Base
     elsif order_by == 'alphabetical'
       order('title ASC')
     else
-      all
+      order('created_at ASC')
     end
   end
 

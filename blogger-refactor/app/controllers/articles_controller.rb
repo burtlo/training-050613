@@ -3,8 +3,11 @@ class ArticlesController < ApplicationController
   before_filter :require_login, except: [ :index, :show ]
 
   def index
-    @order_options = Article.order_options.sort
     @articles = Article.ordered_by(params[:order_by])
+    # @articles = Article.where(title: "tacos")
+    # @articles = ArticlesPresenter.new Article.where(title: "tacos")
+    # @articles = ArticlesPresenter.new Article.ordered_by(params[:order_by])
+
   end
 
   def show
