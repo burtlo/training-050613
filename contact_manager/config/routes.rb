@@ -1,14 +1,13 @@
 ContactManager::Application.routes.draw do
   resources :companies
-
-
   resources :phone_numbers
-
-
   resources :people do
     # resources :phone_numbers
   end
 
+  get '/auth/:provider/callback' => 'sessions#create'
+
+  root to: "people#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
