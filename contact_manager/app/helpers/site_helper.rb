@@ -1,5 +1,9 @@
 module SiteHelper
 
+  def user_login_datetime(object)
+    object.published_at.strftime("%A, %B %e")
+  end
+
   def current_user_auth_link
     if current_user.present?
       text = link_to "Logout", logout_path, method: 'delete'
