@@ -6,8 +6,10 @@ ContactManager::Application.routes.draw do
   end
 
   get '/auth/:provider/callback' => 'sessions#create'
+  get '/login' => redirect('/auth/twitter')
+  delete '/logout' => "sessions#destroy"
 
-  root to: "people#index"
+  root to: "site#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

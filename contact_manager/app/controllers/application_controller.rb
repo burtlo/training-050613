@@ -6,7 +6,15 @@ class ApplicationController < ActionController::Base
   private
 
   def current_user
-    @current_user ||= User.find_by_id(session[:user_id])
+    unless @current_user
+      user = User.find_by_id(session[:user_id])
+      if user
+        @current_user = LoggedInUser.new(user)
+      else
+        @current_user = AnonymousUser.new
+      end
+    end
+    @current_user
   end
 
 end
