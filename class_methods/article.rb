@@ -18,6 +18,10 @@ end
 
 module FinderMethods
 
+  def self.extended(base)
+    puts "I have just been extended by class: #{base}"
+  end
+
   def self.included(base)
     puts "I have just been included by class: #{base}"
     base.extend ClassMethods
