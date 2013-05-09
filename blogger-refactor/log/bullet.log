@@ -1,0 +1,277 @@
+2013-05-08 14:07:33[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb___1568286507346952416_70221816348880'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb__4238887302639067806_70221815180660'2013-05-08 14:14:52[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb___1568286507346952416_70221816348880'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb__4238887302639067806_70221815180660'2013-05-08 14:16:29[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb___1568286507346952416_70221826424180'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb__4238887302639067806_70221815180660'2013-05-08 14:20:40[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+Need Counter Cache
+  Article => [:comments]2013-05-08 14:20:51[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+Need Counter Cache
+  Article => [:comments]2013-05-08 14:21:05[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+Need Counter Cache
+  Article => [:comments]2013-05-08 14:23:49[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb___1568286507346952416_70221803279280'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb__4238887302639067806_70221815180660'2013-05-08 14:24:15[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+Need Counter Cache
+  Article => [:comments]2013-05-08 14:25:07[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb___1568286507346952416_70221801759740'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb__4238887302639067806_70221815180660'2013-05-08 14:29:06[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb___1568286507346952416_70221868546700'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb__4238887302639067806_70221815180660'2013-05-08 14:36:43[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__575030960463235255_70316350679360'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___2897511801344160494_70316349883540'2013-05-08 14:36:48[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__575030960463235255_70316350679360'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___2897511801344160494_70316349883540'2013-05-08 14:37:00[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-08 14:37:49[WARN] user: burtlo
+localhost:3000http://localhost:3000/
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-08 14:40:08[WARN] user: burtlo
+localhost:3000http://localhost:3000/
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-08 14:42:52[WARN] user: burtlo
+localhost:3000http://localhost:3000/
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-08 14:43:06[WARN] user: burtlo
+localhost:3000http://localhost:3000/
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-08 14:43:10[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=default
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-08 14:44:00[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=default
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-08 14:44:37[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=most_recent
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-08 14:44:42[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles?order_by=alphabetical
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-08 14:45:00[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2680707318983346633_70224594535160'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___3037559830405934795_70224563528280'2013-05-09 13:39:23[WARN] user: burtlo
+localhost:3000http://localhost:3000/
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb___2602182990444974786_70284228336320'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___2600397685640713762_70284242096100'2013-05-09 13:40:12[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb___2602182990444974786_70284228336320'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___2600397685640713762_70284242096100'2013-05-09 13:45:08[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2967177459952321027_70179580601660'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___1814863686139519981_70179582753140'2013-05-09 14:06:03[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__2750787766269123787_70159928946340'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb__1239598393681269883_70159964090040'

@@ -20,7 +20,9 @@ class AuthorsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @author }
+      format.json do
+        render json: @author
+      end
     end
   end
 
@@ -43,7 +45,7 @@ class AuthorsController < ApplicationController
   # POST /authors
   # POST /authors.json
   def create
-    @author = Author.new(params[:author])
+    @author = Author.new(author_params)
 
     respond_to do |format|
       if @author.save
@@ -59,10 +61,11 @@ class AuthorsController < ApplicationController
   # PUT /authors/1
   # PUT /authors/1.json
   def update
+
     @author = Author.find(params[:id])
 
     respond_to do |format|
-      if @author.update_attributes(params[:author])
+      if @author.update_attributes(author_params)
         format.html { redirect_to @author, notice: 'Author was successfully updated.' }
         format.json { head :no_content }
       else
@@ -84,4 +87,43 @@ class AuthorsController < ApplicationController
     end
   end
 
+  def author_params
+    # Solution 1
+    params[:author].permit(:username,:email,:password,:password_confirmation)
+
+    # Solution 2
+    # author_params = params[:author]
+    # {
+    #   username: author_params[:username],
+    #   password: author_params[:password],
+    #   password_confirmation: author_params[:password_confirmation],
+    #   email: author_params[:email]
+    # }
+
+    # Solution 3
+    # author_params.except(:admin)
+
+    # Solution 4
+    # author_params = {}
+    # [ :username, :password, :password_confirmation, :email ].each do |key|
+    #   author_params[key] = params[:author][key]
+    # end
+    # author_params
+
+    # Solution 5
+    # params[:author].only(:username, :password, :password_confirmation, :email)
+  end
+
 end
+
+# Solution 5
+# class HashWithIndifferentAccess
+#   def only(*params)
+#     new_hash = {}
+#     params.each do |key|
+#       new_hash[key] = self[key] if has_key?(key)
+#     end
+
+#     new_hash
+#   end
+# end
