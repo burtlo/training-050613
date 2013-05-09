@@ -1,0 +1,134 @@
+2013-05-09 15:09:43[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__4512603745314292898_70151760785380'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___1468995407501277362_70151752847560'2013-05-09 15:10:13[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/_article.html.erb:3:in `_app_views_articles__article_html_erb__4512603745314292898_70151760785380'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/views/articles/index.html.erb:9:in `_app_views_articles_index_html_erb___1468995407501277362_70151752847560'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:12:07[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:12:53[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:13:23[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:14:16[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:19:18[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:19:38[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:19:44[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:20:41[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:21:14[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:21:28[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:21:40[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'2013-05-09 15:23:15[WARN] user: burtlo
+localhost:3000http://localhost:3000/articles.json
+N+1 Query detected
+  Article => [:comments]
+  Add to your finder: :include => [:comments]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:12:in `block (2 levels) in index'
+  /Volumes/Amazon/jumpstartlab/trainings/san-diego-2/blogger-refactor/app/controllers/articles_controller.rb:10:in `index'

@@ -7,6 +7,8 @@ class AuthorsController < ApplicationController
   def index
     @authors = Author.all
 
+    # results = render_to_string(json: @authors)
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @authors }

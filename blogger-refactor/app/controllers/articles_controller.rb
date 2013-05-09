@@ -7,6 +7,10 @@ class ArticlesController < ApplicationController
     # @articles = Article.where(title: "tacos")
     # @articles = ArticlesPresenter.new Article.where(title: "tacos")
     # @articles = ArticlesPresenter.new Article.ordered_by(params[:order_by])
+    respond_to do |format|
+      format.html
+      format.json { render json: @articles }
+    end
 
   end
 
