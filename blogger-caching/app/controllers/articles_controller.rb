@@ -3,7 +3,15 @@ class ArticlesController < ApplicationController
   before_filter :require_login, except: [ :index, :show ]
 
   def index
-    @articles = Article.all_cached
+    @articles = all_articles_cached
+    @article_count = Article.count
+  end
+
+  def all_articles_cached
+
+    Rails.cache.fetch(Cache.articles.all_key,expires_in: Cache.articles.all_time) do
+      Article.all
+    end
   end
 
   def show
