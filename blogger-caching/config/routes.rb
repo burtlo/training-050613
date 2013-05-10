@@ -1,5 +1,7 @@
 Blogger::Application.routes.draw do
 
+  resources :blogs
+
   root to: "articles#index"
 
   resources :articles do
@@ -14,6 +16,15 @@ Blogger::Application.routes.draw do
   match 'login'  => 'author_sessions#new'
   match 'logout' => 'author_sessions#destroy'
 
+
+  scope "/:blog_id", as: 'blog' do
+
+    get "/", to: "articles#index"
+
+    resources :articles do
+      resources :comments, only: [ :create ]
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -7,6 +7,8 @@ class Article < ActiveRecord::Base
   has_many :taggings, dependent: :destroy
   has_many :tags, through: :taggings
 
+  belongs_to :blog
+
   def tag_list
     tags.collect { |tag| tag.name }.join(", ")
   end
