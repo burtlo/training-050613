@@ -1,0 +1,16 @@
+<h1>Articles</h1>
+<ul id="articles">
+<% @articles.each do |article| %>
+  <li>
+    <%= link_to article.title, blog_article_path(current_blog,article) %>
+  </li>
+<% end %>
+</ul>
+
+
+<%= render partial: 'top_article' %>
+
+
+<% if logged_in? %>
+<%= link_to "Create Article", new_blog_article_path(current_blog), class: "new_article" %>
+<% end %>

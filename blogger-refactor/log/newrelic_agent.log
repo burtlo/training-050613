@@ -1,0 +1,27 @@
+# Logfile created on 2013-05-09 15:02:43 -0700 by logger.rb/31641
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Starting the New Relic agent in "development" environment.
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Reading configuration from config/newrelic.yml
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Environment: development
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Dispatcher: webrick
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Application: My Application
+[05/09/13 15:02:43 -0700 Pod.local (80575)] WARN : Agent configured not to send data in this environment.
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Installing ActiveRecord instrumentation
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Installing Net instrumentation
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Installing Rails 3 Controller instrumentation
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Installing Rails3 Error instrumentation
+[05/09/13 15:02:43 -0700 Pod.local (80575)] INFO : Finished instrumentation
+[05/09/13 15:03:30 -0700 Pod.local (80625)] INFO : Starting the New Relic agent in "development" environment.
+[05/09/13 15:03:30 -0700 Pod.local (80625)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/09/13 15:03:30 -0700 Pod.local (80625)] INFO : Reading configuration from config/newrelic.yml
+[05/09/13 15:03:30 -0700 Pod.local (80625)] INFO : Environment: development
+[05/09/13 15:03:30 -0700 Pod.local (80625)] INFO : Dispatcher: webrick
+[05/09/13 15:03:30 -0700 Pod.local (80625)] INFO : Application: My Application
+[05/09/13 15:03:30 -0700 Pod.local (80625)] WARN : Agent configured not to send data in this environment.
+[05/09/13 15:03:31 -0700 Pod.local (80625)] INFO : Installing ActiveRecord instrumentation
+[05/09/13 15:03:31 -0700 Pod.local (80625)] INFO : Installing Net instrumentation
+[05/09/13 15:03:31 -0700 Pod.local (80625)] INFO : Installing Rails 3 Controller instrumentation
+[05/09/13 15:03:31 -0700 Pod.local (80625)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/09/13 15:03:31 -0700 Pod.local (80625)] INFO : Installing Rails3 Error instrumentation
+[05/09/13 15:03:31 -0700 Pod.local (80625)] INFO : Finished instrumentation

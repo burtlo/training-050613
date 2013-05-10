@@ -2,16 +2,15 @@ class ArticlesController < ApplicationController
 
   before_filter :require_login, except: [ :index, :show ]
 
-  def index
-    @articles = Article.ordered_by(params[:order_by])
-    # @articles = Article.where(title: "tacos")
-    # @articles = ArticlesPresenter.new Article.where(title: "tacos")
-    # @articles = ArticlesPresenter.new Article.ordered_by(params[:order_by])
-    respond_to do |format|
-      format.html
-      format.json { render json: @articles }
-    end
+  helper_method :current_blog
 
+  def current_blog
+    Blog.find(params[:blog_id])
+  end
+
+  def index
+    @articles = current_blog.articles.all
+    @article_count = current_blog.articles.count
   end
 
   def show
@@ -24,10 +23,10 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.create params[:article]
+    @article = current_blog.articles.create params[:article]
 
     if @article.valid?
-      redirect_to article_path(@article)
+      redirect_to blog_article_path(current_blog,@article)
     else
       render :new
     end
@@ -45,7 +44,7 @@ class ArticlesController < ApplicationController
 
     if @article.update_attributes params[:article]
       flash[:message] = "You're awesome, you updated the article"
-      redirect_to article_path(@article)
+      redirect_to blog_articles_path(current_blog,@article)
     else
       render :edit
     end
@@ -55,7 +54,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.destroy
     flash[:message] = "You're awesome, You deleted article '#{@article.title}'"
-    redirect_to articles_path
+    redirect_to blog_articles_path(current_blog)
   end
 
 end

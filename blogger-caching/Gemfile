@@ -4,9 +4,9 @@ gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'thin'
+gem 'dalli'
 gem 'sqlite3'
-gem "active_model_serializers", "~> 0.7.0"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -30,8 +30,7 @@ group :test, :development do
   gem 'guard-rspec'
   gem 'rb-fsevent', '~> 0.9.1'
   gem 'capybara'
-  gem 'bullet'
-  gem 'newrelic_rpm'
+  gem 'quiet_assets'
 end
 
 # To use ActiveModel has_secure_password
